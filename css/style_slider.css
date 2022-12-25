@@ -1,0 +1,258 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  /*min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;*/
+}
+
+.movie_dang{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 20%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  font-size: 19px;
+  /*border: 3px solid #AB0700;*/
+}
+.movie_average_high{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border: 3px solid #119908;
+}
+
+.movie_average_middle{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FC790D;
+  color: white;
+  font-size: 16px;
+  border: 3px solid #FA6911;
+}
+
+.movie_average_low{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border: 3px solid #AB0700;
+}
+
+.slide-container{
+  max-width: 1300px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  height: 750px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+  height: 561px;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /*background-color: #022324;*/
+}
+/*.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #022324;
+}*/
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+/*.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}*/
+.card-image .card-img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  /*border-radius: 50%;*/
+  /*border: 4px solid #022324;*/
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #022324;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.button:hover{
+  background: #006350;
+}
+
+.swiper-navBtn{ /*цвет боковых стрелок без наведения*/
+  color: white;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #006350;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #07916D;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+.button_info{
+
+  border: none;
+  font-size: 20px;
+  color: #FFF;
+  padding: 4px 16px;
+  background-color: #022324;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+padding-top: 1px;
+
+}
+.button_info:hover{
+  background: #006350;
+}
+.info {
+ align : right;
+ font-size: 14px;
+}
+.name {
+  margin: center;
+  font-weight: 550;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.button_trail{
+
+  border: none;
+  font-size: 20px;
+  color: #FFF;
+  padding: 4px 10px;
+  background-color: #022324;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+padding-top: 2px;
+
+}
+.button_trail:hover{
+  background: #006350;
+}
+.button_info, .info, .button_trail{
+  margin-top: 20;
+  float:left;
+  margin:0 -25px;
+  margin-left: 45px;
+}

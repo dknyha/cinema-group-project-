@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+body {
+	/*background-image: url(../img/01.jpg);*/
+	background-color: black; 
+}
+* {
+	font-family: 'Red Hat Display', sans-serif;
+	box-sizing:  border-box;
+	
+}
+
+th,td{
+
+	font-size: 18px;
+	padding: 10px;
+}
+th {
+	background: #006350;
+	border: 3px solid #206346;
+	color: #fff; /* цвет текста в заглавии таблицы массива */
+}
+td {
+	background: rgba(0,0,0,0.6) !important;
+	color: white;
+	border: 1px solid white;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	transition: 0.2s ease;
+	color: #C62111;
+}
+td: nth-child(7) > a {
+	color: #c22a2a;
+}
+
+a:hover {
+	opacity: 0.7;
+	color: #BF2111;
+
+}
+
+p{
+	font_style: italic;
+	color: white; /*заглавие полей куда вводим значения */
+	margin-top: 10px;
+	text-align: center;
+}
+.sidor{
+    padding: 10px;
+    display: block;
+    min-height: 30px;
+    width: 250px;
+    margin-left: 10px;
+    border-radius:9px;
+    margin: auto;
+}
+input, textarea, button{
+	padding: 10px;
+	display: block;
+	min-height: 30px;
+	width: 250px;
+	margin-left: 10px;
+	border-radius:9px;
+	
+margin: auto;
+}
+textarea {
+	resize: vertical;
+	height: 80px;
+	margin: auto;
+}
+
+button {
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	margin: auto;
+	margin-top: 25px;
+	background-color: #006350; 
+	border: 3px solid #206346;
+	color: #fff;
+}
+h2 {
+	color: white; /*цвет add new ticket*/
+	margin: auto;
+	text-align: center;
+	margin-top: 5px;
+}
+table {
+	margin: auto;
+
+}
+form {
+	
+}
+.block1 input {
+
+}
+tr {
+	background: rgba(255,255,255,0.6);
+}
